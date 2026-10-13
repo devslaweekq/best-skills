@@ -4,15 +4,38 @@ A shared library of Claude Code skills and commands by devslaweekq, distributed 
 
 ## What's included
 
-| Type    | Name              | Purpose                                                                                   |
-| ------- | ----------------- | ----------------------------------------------------------------------------------------- |
-| Skill   | `frontend-design` | Guidance for distinctive, intentional visual design when building or reshaping UI         |
-| Skill   | `human-comments`  | Rules for writing short, human-sounding comments and replies for colleagues               |
-| Command | `/create-pr`      | Create a GitHub PR for the current branch, filling the repository's PR template concisely |
-| Command | `/pre-pr`         | Self-review the current branch against the repository's own rules before opening a PR     |
-| Command | `/review-replies` | Triage unresolved PR review threads, draft replies and optionally apply the fixes         |
-| Command | `/human`          | Rewrite a draft or write a reply following the `human-comments` rules                     |
-| Command | `/parallel`       | Split a task into independent parts and run them with parallel agents                     |
+| Type    | Name                            | Purpose                                                                                   |
+| ------- | -------------------------------- | ----------------------------------------------------------------------------------------- |
+| Skill   | `frontend-design`                | Guidance for distinctive, intentional visual design when building or reshaping UI         |
+| Skill   | `human-comments`                 | Rules for writing short, human-sounding comments and replies for colleagues               |
+| Command | `/create-pr`                     | Create a GitHub PR for the current branch, filling the repository's PR template concisely |
+| Command | `/pre-pr`                        | Self-review the current branch against the repository's own rules before opening a PR     |
+| Command | `/review-replies`                | Triage unresolved PR review threads, draft replies and optionally apply the fixes         |
+| Command | `/human`                         | Rewrite a draft or write a reply following the `human-comments` rules                     |
+| Command | `/parallel`                      | Split a task into independent parts and run them with parallel agents                     |
+
+### Design & animation (imported from [emilkowalski/skills](https://github.com/emilkowalski/skills), see `THIRD_PARTY_NOTICES.md`)
+
+| Type  | Name                            | Purpose                                                                                      |
+| ----- | -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Skill | `emil-design-eng`                | Core UI polish/taste philosophy: component design, states, the invisible details that add up   |
+| Skill | `break-ui`                       | Stress-test a UI with realistic worst-case data (long names, huge counts, empty states) and report what breaks |
+| Skill | `animate`                        | Build a single animation from scratch with the right curve, duration and properties             |
+| Skill | `animate-expo`                   | The same bar for React Native/Expo: gestures, sheets, haptics, screen transitions, off-JS-thread motion |
+| Skill | `review-animations`              | Strict review of existing animations against a fixed rule set                                   |
+| Skill | `improve-animations`             | Audit all animations in a codebase and produce a prioritized, executable fix plan                |
+| Skill | `find-animation-opportunities`   | Find where motion would genuinely help a UI — and what not to animate                            |
+| Skill | `animation-performance`          | Diagnose and fix animations that drop frames, including subtle causes                            |
+| Skill | `animation-vocabulary`           | Precise vocabulary for describing the motion you want to an AI                                   |
+| Skill | `apple-design`                   | Apple's interface-design and fluid-motion principles (WWDC design talks), translated for the web |
+| Skill | `write-swift`                    | Modern Swift: value types, Swift 6 concurrency, generics, performance, Swift Testing             |
+| Skill | `pick-ui-library`                | Pick a trusted UI/component library for a task instead of hand-rolling or installing an abandoned package |
+| Skill | `prototype`                      | Build and compare multiple variants of a UI piece through a switcher                             |
+| Skill | `mobile-native`                  | Make a web app feel native on a phone: safe areas, tap highlights, input zoom, the 100vh bug, etc. |
+| Skill | `ask-sonner`                     | Setup, styling and recipes for the Sonner toast library                                          |
+
+`plugins/devslaweekq/performance-cheatsheet.md` is a supporting reference for the animation-performance skills, also imported from the same
+source.
 
 The commands are repository-agnostic: they read the conventions (PR template, contributing docs, CODEOWNERS, lint and test commands) from
 the repository they are run in.
@@ -100,8 +123,9 @@ Anyone using Claude Code runs the following (interactive slash commands):
 /plugin marketplace update devslaweekq-skills
 ```
 
-This adds the `devslaweekq-skills` marketplace and installs the `devslaweekq` plugin (skills `frontend-design` and `human-comments`, plus
-the commands `/create-pr`, `/parallel`, `/pre-pr`, `/review-replies` and `/human`).
+This adds the `devslaweekq-skills` marketplace and installs the `devslaweekq` plugin: the original skills (`frontend-design`,
+`human-comments`) and commands (`/create-pr`, `/parallel`, `/pre-pr`, `/review-replies`, `/human`), plus the imported design/animation
+skills listed above.
 
 Check what is installed:
 
