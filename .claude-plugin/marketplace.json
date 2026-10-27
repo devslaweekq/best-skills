@@ -1,14 +1,14 @@
 {
-    "name": "devslaweekq-skills",
-    "owner": {
-        "name": "devslaweekq"
-    },
-    "description": "A shared library of Claude Code skills by devslaweekq",
-    "plugins": [
-        {
-            "name": "devslaweekq",
-            "source": "./plugins/devslaweekq",
-            "description": "The full set of devslaweekq skills and commands for Claude Code"
-        }
-    ]
+  "name": "devslaweekq-skills",
+  "owner": {
+    "name": "devslaweekq"
+  },
+  "description": "A shared library of Claude Code skills by devslaweekq",
+  "plugins": [
+    {
+      "name": "devslaweekq",
+      "source": "./plugins/devslaweekq",
+      "description": "The full set of devslaweekq skills and commands for Claude Code"
+    }
+  ]
 }

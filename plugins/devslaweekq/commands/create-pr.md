@@ -27,19 +27,19 @@ and titles are written. Match that pattern: length, language, which checkboxes a
   write a multi-paragraph "Problem / Root cause / Fix" explanation: that belongs in the commit history and the review.
 - **Change type section.** Don't touch the template's own wording. Flip `[ ]` to `[x]` on exactly one line, chosen by the real effect of the
   change rather than by the commit prefix alone:
-    - new feature: adds functionality;
-    - bugfix: fixes actually broken behavior;
-    - other: cosmetic, config or label changes, even if the commit says `fix:`;
-    - breaking change: only if it really breaks existing behavior or contracts.
+  - new feature: adds functionality;
+  - bugfix: fixes actually broken behavior;
+  - other: cosmetic, config or label changes, even if the commit says `fix:`;
+  - breaking change: only if it really breaks existing behavior or contracts.
 - **Checklist section.** Don't touch the template's own wording. Flip `[ ]` to `[x]` only for what is literally true for this diff, and
   never blanket-check:
-    - build, lint and tests pass locally: only after actually running them for the touched packages;
-    - tests added: only if the diff adds or updates test files;
-    - docs added: only if docs were genuinely added or updated;
-    - migrations added: only if the diff contains a new migration;
-    - environment variables changed: only if env files or the config schema changed;
-    - infrastructure changed: for any Dockerfile or compose file change;
-    - CI/CD changed: only if CI workflow files changed.
+  - build, lint and tests pass locally: only after actually running them for the touched packages;
+  - tests added: only if the diff adds or updates test files;
+  - docs added: only if docs were genuinely added or updated;
+  - migrations added: only if the diff contains a new migration;
+  - environment variables changed: only if env files or the config schema changed;
+  - infrastructure changed: for any Dockerfile or compose file change;
+  - CI/CD changed: only if CI workflow files changed.
 - **Comments / notes section.** Replace the placeholder with rationale (alternatives considered, trade-offs) only if the change is large or
   non-obvious. Otherwise leave it as it is.
 

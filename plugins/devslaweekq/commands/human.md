@@ -1,6 +1,5 @@
 ---
-description:
-    Rewrite a draft, or write a reply, as a short human comment for a colleague (PR thread, chat) following the human-comments rules
+description: Rewrite a draft, or write a reply, as a short human comment for a colleague (PR thread, chat) following the human-comments rules
 argument-hint: [draft text or situation]
 ---
 

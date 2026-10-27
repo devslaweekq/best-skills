@@ -1,6 +1,5 @@
 ---
-description:
-    Go through unresolved review threads on a PR, classify each (fix / disagree / clarify), draft replies and optionally apply the fixes
+description: Go through unresolved review threads on a PR, classify each (fix / disagree / clarify), draft replies and optionally apply the fixes
 argument-hint: [PR number or URL]
 ---
 

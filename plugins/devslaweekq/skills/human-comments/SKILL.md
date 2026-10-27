@@ -1,8 +1,7 @@
 ---
 name: human-comments
-description:
-    Use when writing text that a colleague will read as written by a person - PR review comments, replies in review threads, chat messages,
-    comments. Not for code, code comments, commit messages or PR descriptions.
+description: Use when writing text that a colleague will read as written by a person - PR review comments, replies in review threads, chat messages,
+  comments. Not for code, code comments, commit messages or PR descriptions.
 ---
 
 # Human Comments
